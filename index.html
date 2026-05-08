@@ -8,106 +8,134 @@
   </head>
   <body>
     <header class="bg-white py-4 shadow-sm">
-  <div class="container mx-auto px-4 flex justify-between items-center">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="logo flex items-center gap-2">
+          <img src="./assets/img/Furniro.svg" alt="Furniro Logo" class="h-8" />
 
-    <!-- Logo -->
-    <div class="logo flex items-center gap-2">
+          <a href="#" class="text-2xl md:text-4xl font-bold"> Furniro </a>
+        </div>
 
-      <img
-        src="./assets/img/Furniro.svg"
-        alt="Furniro Logo"
-        class="h-8"
-      />
+        <!-- Navigation -->
+        <nav class="hidden md:block">
+          <ul class="flex gap-16 font-medium">
+            <li>
+              <a href="#" class="nav-link"> Home </a>
+            </li>
 
-      <a href="#" class="text-2xl md:text-4xl font-bold">
-        Furniro
-      </a>
+            <li>
+              <a href="#" class="nav-link"> Shop </a>
+            </li>
 
-    </div>
+            <li>
+              <a href="#" class="nav-link"> About </a>
+            </li>
 
-    <!-- Navigation -->
-    <nav class="hidden md:block">
+            <li>
+              <a href="#" class="nav-link"> Contact </a>
+            </li>
+          </ul>
+        </nav>
 
-      <ul class="flex gap-16 font-medium">
+        <!-- Icons -->
+        <div>
+          <ul class="flex gap-4 md:gap-8">
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/img/mdi_account-alert-outline.svg"
+                  alt="Account"
+                  class="h-5 md:h-6 nav-icon"
+                />
+              </a>
+            </li>
 
-        <li>
-          <a href="#" class="nav-link">
-            Home
-          </a>
-        </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/img/Vector.svg"
+                  alt="Search"
+                  class="h-5 md:h-6 nav-icon"
+                />
+              </a>
+            </li>
 
-        <li>
-          <a href="#" class="nav-link">
-            Shop
-          </a>
-        </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/img/Vectorr.svg"
+                  alt="Wishlist"
+                  class="h-5 md:h-6 nav-icon"
+                />
+              </a>
+            </li>
 
-        <li>
-          <a href="#" class="nav-link">
-            About
-          </a>
-        </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/img/ant-design_shopping-cart-outlined.svg"
+                  alt="Shopping Cart"
+                  class="h-5 md:h-6 nav-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        <li>
-          <a href="#" class="nav-link">
-            Contact
-          </a>
-        </li>
+      <!-- Hero Section -->
 
-      </ul>
+      <section class="relative min-h-screen">
+        
+        <img
+          src="./assets/img/scandinavian-interior-mockup-wall-decal-background 1.svg"
+          alt="Scandinavian Interior Mockup"
+          class="w-full h-screen object-cover"
+        />
 
-    </nav>
+        <!-- Overlay Content -->
+        <div
+          class="absolute inset-0 flex items-center justify-center xl:justify-end px-4"
+        >
+          <!-- Content Box -->
+          <div
+            class="bg-[#FFF3E3] w-full max-w-lg md:max-w-xl p-6 sm:p-8 md:p-10 rounded-md"
+          >
+            <!-- Small Title -->
+            <p
+              class="tracking-[3px] font-semibold text-gray-700 mb-3 text-sm md:text-base"
+            >
+              New Arrival
+            </p>
 
-    <!-- Icons -->
-    <div>
+            <!-- Main Heading -->
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#B88E2F] leading-tight mb-6"
+            >
+              Discover Our <br />
+              New Collection
+            </h1>
 
-      <ul class="flex gap-4 md:gap-8">
+            <!-- Paragraph -->
+            <p class="text-gray-700 leading-7 mb-8 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </p>
 
-        <li>
-          <a href="#">
-            <img
-              src="./assets/img/mdi_account-alert-outline.svg"
-              alt="Account"
-              class="h-5 md:h-6 nav-icon"
-            />
-          </a>
-        </li>
+            <!-- Button -->
+            <a
+              href="#"
+              class="btn-primary inline-block uppercase text-sm md:text-base"
+            >
+              Buy Now
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <li>
-          <a href="#">
-            <img
-              src="./assets/img/Vector.svg"
-              alt="Search"
-              class="h-5 md:h-6 nav-icon"
-            />
-          </a>
-        </li>
 
-        <li>
-          <a href="#">
-            <img
-              src="./assets/img/Vectorr.svg"
-              alt="Wishlist"
-              class="h-5 md:h-6 nav-icon"
-            />
-          </a>
-        </li>
 
-        <li>
-          <a href="#">
-            <img
-              src="./assets/img/ant-design_shopping-cart-outlined.svg"
-              alt="Shopping Cart"
-              class="h-5 md:h-6 nav-icon"
-            />
-          </a>
-        </li>
 
-      </ul>
-
-    </div>
-
-  </div>
-</header>
+    </header>
   </body>
 </html>

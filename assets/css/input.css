@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@layer components {
+  .nav-link {
+    @apply hover:text-[#B88E2F] transition duration-300;
+  }
+}
+@layer components {
+  .nav-icon {
+    @apply hover:scale-110 transition;
+  }
+}
+

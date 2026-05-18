@@ -3,12 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Furniro</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,50０;1,6００;1,7００;1,8００;1,9００&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="./assets/css/output.css" rel="stylesheet" />
-    <title>Document</title>
   </head>
   <body>
-    <header class="bg-white py-4 shadow-sm">
-      <div class="container mx-auto px-4 flex justify-between items-center">
+
+    <header class= "py-7">
+
+    
+
+
+      <div class="container mx-auto px-4 flex justify-between items-center ">
         <!-- Logo -->
         <div class="logo flex items-center gap-2">
           <img src="./assets/img/Furniro.svg" alt="Furniro Logo" class="h-8" />
@@ -17,10 +37,10 @@
         </div>
 
         <!-- Navigation -->
-        <nav class="hidden md:block">
-          <ul class="flex gap-16 font-medium">
+        <nav class="hidden lg:block">
+          <ul class="flex gap-19 font-medium">
             <li>
-              <a href="#" class="nav-link"> Home </a>
+              <a href="#" class="nav-link">Home</a>
             </li>
 
             <li>
@@ -38,8 +58,8 @@
         </nav>
 
         <!-- Icons -->
-        <div>
-          <ul class="flex gap-4 md:gap-8">
+        <div class="icons hidden md:block">
+          <ul class="flex gap-11 md:gap-7 ">
             <li>
               <a href="#">
                 <img
@@ -81,12 +101,17 @@
             </li>
           </ul>
         </div>
+
+
       </div>
+
+   <div class="menu block md:hidden">
+      <img src="./assets/img/Vector(Stroke).png" alt="Menu Icon" class="h-6 w-6 cursor-pointer" />
+    </div>
 
       <!-- Hero Section -->
 
       <section class="relative min-h-screen">
-        
         <img
           src="./assets/img/scandinavian-interior-mockup-wall-decal-background 1.svg"
           alt="Scandinavian Interior Mockup"
@@ -132,10 +157,6 @@
           </div>
         </div>
       </section>
-
-
-
-
     </header>
   </body>
 </html>

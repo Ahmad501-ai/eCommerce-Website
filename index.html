@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Furniro</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -15,10 +15,155 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!--Taiwind Css-->
+    <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
 
 
+  
+  <body>
+     
+
+ <header class="border-b border-[rgb(115,90,54)] bg-[rgb(252,249,248)]">
+  <div
+    class="flex min-h-11 items-center justify-center bg-[rgb(115,90,54)] px-3 text-center"
+  >
+
+    <p class="text-sm font-normal tracking-wide text-white"> <!--text-sm the same size ,font-normal  سماكة الخط,  letter-spacing  the same tracking-wide-->
+      Free delivery on selected furniture orders
+    </p>
+  </div>
 
 
-  <body></body>
+
+
+  <!-- Navbar -->
+  <div
+    class="mx-auto flex h-20 w-full max-w-[1440px] items-center justify-between px-5 md:px-10 lg:px-16"
+  >
+    <!-- Logo -->
+    <a
+      href="./index.html"
+      class="font-heading text-2xl font-semibold tracking-tight text-[rgb(22,40,57)]"
+      aria-label="Go to Furnora homepage"
+    >
+      FURNORA
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:block" aria-label="Main navigation">
+      <ul class="flex items-center gap-6">
+        <li>
+          <a
+            href="./index.html"
+            class="relative inline-flex h- items-center font-medium text-[rgb(115,90,54)]
+                   after:absolute after:bottom-5 after:left-0 after:h-0.5 after:w-full
+                   after:bg-[rgb(115,90,54)]"
+            aria-current="page"
+          >
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="./products.html"
+            class="inline-flex h-20 items-center text-[rgb(67,71,76)]
+                   transition-colors hover:text-[rgb(115,90,54)]"
+          >
+            Products
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="./about.html"
+            class="inline-flex h-20 items-center text-[rgb(67,71,76)]
+                   transition-colors hover:text-[rgb(115,90,54)]"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Actions -->
+    <div class="hidden items-center gap-5 md:flex">
+      <a
+        href="./wishlist.html"
+        class="transition-opacity hover:opacity-60"
+        aria-label="Open wishlist"
+      >
+        <img
+          src="./assets/icons/Heart.svg"
+          alt=""
+          class="size-6"
+        />
+      </a>
+
+      <a
+        href="./profile.html"
+        class="transition-opacity hover:opacity-60"
+        aria-label="Open profile"
+      >
+        <img
+          src="./assets/icons/User Account.svg"
+          alt=""
+          class="size-6"
+        />
+      </a>
+
+      <a
+        href="./cart.html"
+        class="relative transition-opacity hover:opacity-60"
+        aria-label="Open shopping cart"
+      >
+        <img
+          src="./assets/icons/shopping-cart.svg"
+          alt=""
+          class="size-6"
+        />
+
+        <span
+          class="absolute -right-2 -top-2 flex size-4 items-center justify-center
+                 rounded-full bg-[#735A36] text-[10px] font-medium text-white"
+        >
+          0
+        </span>
+      </a>
+    </div>
+
+    <!-- Mobile Actions -->
+    <div class="flex items-center gap-4 md:hidden">
+      <a href="./cart.html" class="relative" aria-label="Open shopping cart">
+        <img
+          src="./assets/icons/shopping-cart.svg"
+          alt=""
+          class="size-6"
+        />
+
+        <span
+          class="absolute -right-2 -top-2 flex size-4 items-center justify-center
+                 rounded-full bg-[#735A36] text-[10px] text-white"
+        >
+          0
+        </span>
+      </a>
+
+      <button
+        type="button"
+        class="flex size-10 items-center justify-center"
+        aria-label="Open navigation menu"
+      >
+        <span class="flex flex-col gap-1.5">
+          <span class="h-0.5 w-6 bg-[#162839]"></span>
+          <span class="h-0.5 w-6 bg-[#162839]"></span>
+          <span class="h-0.5 w-6 bg-[#162839]"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+  </body>
 </html>

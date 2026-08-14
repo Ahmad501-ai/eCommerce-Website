@@ -5,171 +5,119 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Furniro</title>
-    <!-- Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Furnora</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <!--Taiwind Css-->
-
-
-
-    
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
 
-
-  
   <body>
-     
-
- <header class="border-b border-[rgb(115,90,54)] bg-[rgb(252,249,248)]">
-  <div
-    class="flex min-h-11.25  items-center justify-center bg-[rgb(115,90,54)] px-3 text-center"
-  >
-
-    <p class="text-sm font-normal tracking-wide text-white"> <!--text-sm the same size ,font-normal  سماكة الخط,  letter-spacing  the same tracking-wide-->
-      Free delivery on selected furniture orders
-    </p>
-  </div>
-
-
-
-
-  <!-- Navbar -->
-  <div
-    class="mx-auto flex h-20.25 w-full max-w-7xl items-center justify-between px-6 "
-  > 
-    <!-- Logo -->
-    <a
-      href="./index.html"
-      class="font-heading text-[30px] font-bold  text-primary"
-  
-    >
-      FURNORA
-    </a>
-
-    
-
-    <!-- Desktop Navigation -->
-    <nav class="hidden md:block">
-      <ul class="flex items-center gap-6">
-        <li>
-          <a
-            href="./index.html"
-            class=" inline-flex h-20.25 items-center font-medium  text-secondary"
-          
-          >
-            Home
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="./products.html"
-            class="inline-flex h-20.25 items-center text-text-secondary
-                   transition-colors   hover:text-secondary"
-          >
-            Products
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="./about.html"
-            class="inline-flex h-20.25 items-center text-text-secondary
-                   transition-colors hover:text-secondary"
-          >
-            About
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-
-
-    <!-- Desktop Actions -->
-    <div class="hidden items-center gap-3 md:flex">
-      <a
-        href="./wishlist.html"
-        class="transition-opacity hover:opacity-50"
-       
+    <header class="border-b border-border bg-background">
+      <div
+        class="flex h-[45px] items-center justify-center bg-secondary px-3 text-center"
       >
-        <img
-          src="./assets/icons/Heart.svg"
-          alt=""
-          class="size-6"
-        />
-      </a>
+        <p class="text-sm font-normal tracking-wide text-white">
+          Free delivery on selected furniture orders
+        </p>
+      </div>
 
-      <a
-        href="./profile.html"
-        class="transition-opacity hover:opacity-50"
-       
+      <div
+        class="mx-auto flex h-[81px] w-full max-w-7xl items-center justify-between px-6"
       >
-        <img
-          src="./assets/icons/User Account.svg"
-          alt=""
-          class="size-6"
-        />
-      </a>
-
-      <a
-        href="./cart.html"
-        class="relative transition-opacity hover:opacity-50"
-         
-      >
-        <img
-          src="./assets/icons/shopping cart.svg"
-          alt=""
-          class="size-6"
-        />
-
-        <span
-          class="absolute -right-2 -top-2 flex size-4 items-center justify-center
-                 rounded-full bg-[#735A36] text-[10px] font-medium text-white"
+        <a
+          href="./index.html"
+          class="font-heading text-[30px] font-bold text-primary"
         >
-          0
-        </span>
-      </a>
-    </div>
+          FURNORA
+        </a>
 
-    <!-- Mobile Actions -->
-    <div class="flex items-center gap-4 md:hidden">
-      <a href="./cart.html" class="relative" aria-label="Open shopping cart">
-        <img
-          src="./assets/icons/shopping-cart.svg"
-          alt=""
-          class="size-6"
-        />
+        <nav class="hidden lg:block">
+          <ul class="flex items-center gap-6">
+            <li>
+              <a
+                href="./index.html"
+                class="relative inline-flex h-[81px] items-center font-medium text-secondary after:absolute after:bottom-[20px] after:left-0 after:h-[2px] after:w-full after:bg-secondary"
+                aria-current="page"
+              >
+                Home
+              </a>
+            </li>
 
-        <span
-          class="absolute -right-2 -top-2 flex size-4 items-center justify-center
-                 rounded-full bg-[#735A36] text-[10px] text-white"
-        >
-          0
-        </span>
-      </a>
+            <li>
+              <a
+                href="./products.html"
+                class="inline-flex h-[81px] items-center text-text-secondary transition-colors hover:text-secondary"
+              >
+                Products
+              </a>
+            </li>
 
-      <button
-        type="button"
-        class="flex size-10 items-center justify-center"
-        aria-label="Open navigation menu"
-      >
-        <span class="flex flex-col gap-1.5">
-          <span class="h-0.5 w-6 bg-[#162839]"></span>
-          <span class="h-0.5 w-6 bg-[#162839]"></span>
-          <span class="h-0.5 w-6 bg-[#162839]"></span>
-        </span>
-      </button>
-    </div>
-  </div>
-</header>
+            <li>
+              <a
+                href="./about.html"
+                class="inline-flex h-[81px] items-center text-text-secondary transition-colors hover:text-secondary"
+              >
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hidden items-center gap-3 lg:flex">
+          <a href="./wishlist.html" class="transition-opacity hover:opacity-50">
+            <img src="./assets/icons/heart.svg" alt="Wishlist" class="size-6" />
+          </a>
+
+          <a href="./profile.html" class="transition-opacity hover:opacity-50">
+            <img
+              src="./assets/icons/user-account.svg"
+              alt="Profile"
+              class="size-6"
+            />
+          </a>
+
+          <a
+            href="./cart.html"
+            class="relative transition-opacity hover:opacity-50"
+          >
+            <img
+              src="./assets/icons/shopping-cart.svg"
+              alt="Shopping cart"
+              class="size-6"
+            />
+          </a>
+        </div>
+
+        <div class="flex items-center gap-4 lg:hidden">
+          <a href="./cart.html" class="relative">
+            <img
+              src="./assets/icons/shopping-cart.svg"
+              alt="Shopping cart"
+              class="size-6"
+            />
+          </a>
+
+          <button
+            type="button"
+            class="flex size-10 items-center justify-center"
+          >
+            <img
+              src="./assets/icons/Menu--Streamline-Sharp-Streamline-Material.png"
+              alt="Menu"
+              class="size-6"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
